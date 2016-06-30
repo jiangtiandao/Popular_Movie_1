@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_movie_poster"
+    android:layout_width="185dp"
+    android:layout_height="278dp"
+    fresco:placeholderImage="@drawable/loading"
+    fresco:failureImage="@mipmap/ic_launcher"
+    />
