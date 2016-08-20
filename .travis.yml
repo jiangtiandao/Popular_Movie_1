@@ -1,4 +1,17 @@
 language: android
+env:
+  global:
+# Using the new Container-Based Infrastructure
+    - sudo: false
+# Turning off caching to avoid caching Issues
+    - cache: false
+# Initiating clean Gradle output
+    - TERM=dumb
+# Amount of memory granted to Gradle JVM
+    - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+before_install:
+# Making sure gradlew has executable permissions
+    - chmod +x gradlew
 android:
   components:
     # The BuildTools version used by your project
@@ -12,4 +25,4 @@ android:
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-script: ./gradlew connectedAndroidTest
+
