@@ -8,7 +8,6 @@ android:
     - android-23
 
     # Additional components
-    - extra-google-google_play_services
 
 
     # Specify at least one system image,
