@@ -28,3 +28,5 @@ android:
 before_install:
 # Making sure gradlew has executable permissions
     - chmod +x gradlew
+    - android update sdk --filter extra-android-support --no-ui --force > /dev/null
+    - android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null
